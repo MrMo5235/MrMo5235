@@ -1,0 +1,20 @@
+#include "stm32f10x.h"                  // Device header
+#include "Delay.h"
+#include "OLED.h"
+
+
+uint8_t KeyNum;
+
+int main(void)
+{
+	OLED_Init();
+	OLED_ShowString(1, 1, "Hello World!");
+	OLED_ShowNum(2, 1, 10, 2);
+	OLED_ShowChar(2, 4, 'A');
+	OLED_ShowHexNum(2, 6, 0xFF, 2);
+	
+	while(1)
+	{
+		
+	}
+}
